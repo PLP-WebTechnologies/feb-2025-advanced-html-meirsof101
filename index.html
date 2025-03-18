@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week Two Web Development Assignment</title>
+    <style>
+        h1 { color: black; text-align: center; }
+        h2 { color: blue; text-align: center; }
+        table { border-collapse: collapse; width: 80%; margin: 20px auto; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        form { width: 400px; margin: 20px auto; padding: 20px; border: 1px solid black; border-radius: 5px;}
+        label { display: block; margin-bottom: 5px; }
+        input[type="text"], input[type="email"], input[type="password"], input[type="date"], select { width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        input[type="radio"], input[type="checkbox"] { margin-bottom: 10px; }
+        input[type="submit"] { background-color: #4CAF50; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; }
+        input[type="submit"]:hover { background-color: #45a049; }
+        .radio-group, .checkbox-group { margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Week Two Assignment</h1>
+    <br><br>
+    <h2>Counties in Kenya</h2>
+    <h3>Coastal Counties</h3>
+    <ol>
+        <li>Mombasa</li>
+        <li>Kwale</li>
+        <li>Taita Taveta</li>
+        <li>Kilifi</li>
+        <li>Tana River</li>
+    </ol>
+    <h3>Central Counties</h3>
+    <ol>
+        <li>Nyeri</li>
+        <li>Muranga</li>
+        <li>Nyandarua</li>
+        <li>Kirinyaga</li>
+        <li>Kiambu</li>
+    </ol>
+    <h2>Amazing Shots</h2>
+    <img src="https://images.pexels.com/photos/31163138/pexels-photo-31163138/free-photo-of-breathtaking-taita-hills-landscape-in-kenya.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Breathtaking Taita Hills" width="600" height="600" />
+    <img src="https://images.pexels.com/photos/240526/pexels-photo-240526.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Beach" width="600" height="600" />
+    <h3>Tables</h3>
+    <table border="1">
+        
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Fidel Mwaro</td>
+                <td>12-34</td>
+                <td>0799328159</td>
+                <td>fidelmwaro@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Jane Kiarie</td>
+                <td>2-356</td>
+                <td>0765445656</td>
+                <td>kiariejan@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Sarah Audi</td>
+                <td>34-67</td>
+                <td>0712341234</td>
+                <td>audisarah@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Neema Eff</td>
+                <td>87-90</td>
+                <td>0700224433</td>
+                <td>effneema@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Abdi Omar</td>
+                <td>765-213</td>
+                <td>0114886794</td>
+                <td>abdio123@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>Registration Form</h3>
+    <form action="/register" method="post">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full names here" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email here" required />
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Password" required />
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required />
+        <label for="country">Country</label>
+        <select id="country" name="country">
+            <option value="">Select a country</option>
+            <option value="Kenya">Kenya</option>
+            <option value="Uganda">Uganda</option>
+            <option value="Tanzania">Tanzania</option>
+            <option value="Rwanda">Rwanda</option>
+            <option value="Ethiopia">Ethiopia</option>
+            <option value="other">Other</option>
+        </select>
+        <div class="radio-group">
+            <p>Gender:</p>
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label><br />
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label><br />
+        </div>
+        <div class="checkbox-group">
+            <input type="checkbox" id="terms" name="terms" />
+            <label for="terms">I agree to the terms and conditions</label><br />
+            <input type="checkbox" id="human" name="human" />
+            <label for="human">I am not a robot</label>
+        </div>
+        <input type="submit" value="Register" />
+    </form>
+</body>
+</html>
